@@ -9,6 +9,7 @@ SELECT
 FROM
     (SELECT
 		  CONCAT(YEAR(ord.orderDate),'-',MONTH(ord.orderDate)) as date,
+			cst.salesRepEmployeeNumber,
 		  cst.customerNumber,
 		  cst.customerName,
 		  ord.orderNumber,
@@ -22,7 +23,6 @@ FROM
 		INNER JOIN products AS prd ON prd.productCode = ord_det.productCode
 		ORDER BY ord.orderDate,cst.customerName   DESC
 ) as m_t
-INNER JOIN customers as cst ON cst.customerNumber = m_t.customerNumber
 INNER JOIN employees as emp on emp.employeeNumber = cst.salesRepEmployeeNumber
 WHERE m_t.status = 'Shipped' AND SUBSTRING(m_t.date,1,4) = 2005
 GROUP BY m_t.date, emp.employeeNumber

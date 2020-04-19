@@ -1,4 +1,5 @@
 SELECT
+	cst.salesRepEmployeeNumber,
 	cst.customerNumber,
   cst.customerName
 FROM customers AS cst

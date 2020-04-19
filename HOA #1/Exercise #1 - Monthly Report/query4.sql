@@ -1,5 +1,6 @@
 SELECT
   CONCAT(YEAR(ord.orderDate),'-',MONTH(ord.orderDate)) as date,
+  cst.salesRepEmployeeNumber,
   cst.customerNumber,
   cst.customerName,
   ord.orderNumber,
