@@ -1,29 +1,20 @@
+/*
+Since the employee and the transactions is a one is to many relationship, the
+rows of the employees increased in number to match each transactions.
+
+We have to group all the sales to their respective employee numbers and get the
+sum.
+
+WE also have to filter out the sales to those whose transactions were sucessfully
+shipped and made during 2005.
+*/
+
 SELECT
 	CONCAT(emp.firstName, ' ', emp.lastName) as employee_name,
-    SUM(m_t.total_value) as sales,
-    CASE
-    	WHEN SUM(m_t.total_value) > 100000 THEN "For Promotion"
-        WHEN SUM(m_t.total_value) >= 50000 THEN "Meets Targets"
-        ELSE "Performance Review"
-    END as employment_status
-FROM
-    (SELECT
-		  CONCAT(YEAR(ord.orderDate),'-',MONTH(ord.orderDate)) as date,
-			cst.salesRepEmployeeNumber,
-		  cst.customerNumber,
-		  cst.customerName,
-		  ord.orderNumber,
-		  ord.status,
-		  prd.productName,
-		  ord_det.quantityOrdered,
-		  (ord_det.quantityOrdered * ord_det.priceEach) as total_value
-		FROM customers AS cst
-		INNER JOIN orders AS ord ON cst.customerNumber = ord.customerNumber
-		INNER JOIN orderdetails as ord_det ON ord.orderNumber = ord_det.orderNumber
-		INNER JOIN products AS prd ON prd.productCode = ord_det.productCode
-		ORDER BY ord.orderDate,cst.customerName   DESC
-) as m_t
-INNER JOIN employees as emp on emp.employeeNumber = cst.salesRepEmployeeNumber
-WHERE m_t.status = 'Shipped' AND SUBSTRING(m_t.date,1,4) = 2005
-GROUP BY m_t.date, emp.employeeNumber
-ORDER BY sales  DESC
+    SUM(mt.total_value) as sales,
+    '' as employment_status
+FROM employees as emp
+INNER JOIN monthly_transactions as mt on emp.employeeNumber = mt.salesRepEmployeeNumber
+WHERE mt.status = 'Shipped' AND SUBSTRING(mt.date,1,4) = 2005
+GROUP BY emp.employeeNumber
+ORDER BY sales DESC
