@@ -1,0 +1,4 @@
+pandas
+datetime
+google-auth
+pandas_gbq

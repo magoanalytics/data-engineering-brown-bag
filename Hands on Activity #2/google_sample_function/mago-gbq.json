@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "citric-campaign-274511",
+  "private_key_id": "965d5e4d479abc35428290654e37dcad1ff0a3f5",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQC3pOMUF4hlkwv2\nRXPGzTZO457t+xrE8vDO+1eOpeMfNZM02h6kX3hqMz9j7X+3c89qDs63cxsHtfWM\nbVyFkciLXgcwoCRn8y74kZvc8P/bXjw8bItDS8ooUEbFkOivdIgIwkoZnLuCGXkT\n4g8leNTT2qOXlsaetjh0HFcmgv4OK5FyJMoC/7hk4jyXh5fRgqTfOauh62aQq07P\nsy6/LslsOnFLe4D9Y5FmN+r5m91AifROda1pscP8iVZTjp43kHcveFQp8qeJZ7l6\nubtxp1nUA/zFFr1goWAQpBprqfpo080j5yzFJLKAL6Moa8X4RpvVm17ajXggB5cf\nA/7jrKNTAgMBAAECggEAA3uLg4vcs3xskNDesgmd5YoYhKUrQUqQJC9iXjCpfs6F\nH6P2n8xgXAyOalvh0lNOaXxQEZeLuYOLCAziNnWTdYfPdW3Gsvf1eejyU+gixKtj\n/gta6r2gXvpYFT1lxD9eqGKIMDXSMn8+1hCGlAHXcLsSjiM3BLcqQ+gZA6sem/B8\nU7wqmNHO9xbjZPy+y9CN2Hb1H4GUIFUwEDP3bHoHhqUffNKAzDiS0bjcN6Ysu8jm\ny8saroPNf7rBHw5fuA13r6pX6ZdTA4DDEojbUTw69HDn7fMvAA9dzFVx1zDrao9D\n7eIf7x1O4KJYir+/3GYXdWz4da8Baj8Vq6nAprphvQKBgQDqdUJksy8ggfZcZOIQ\nqIbMWUs9/GMy7ysG1+bopG2mklwlxEYBVrtkanzjRZt6aBXjJYhouQFbrwENV6P9\naLf+qPk78WaQoq8UAuRCILSnzQKyvvRR54LYqoylJDJEj6+odRtU/lYJv3iIHaK1\nmUTPeyAv24z3U8ILcYtHeTxLjQKBgQDIhGvR1RHUozNR9ZQqzLNpFWdAnOhvqIIo\nB3JEtWvk0JpUDaXWJrNb66CKJ+NVJ/fyZOwSaAPuC+jaK8YUGpLnLa2hWVo4cW1P\neoa3eBvjA/pzJZeHvs14Y73SC6321ugaJauk/MI7u2qvS2dE3aBdQepVe5fg+TW8\njAzAhGuCXwKBgQCBzVdrntQ5gBofvu51YIf4fHsunxtgaI7+o+s/40CdlqwTcJ19\nQkJO7rGjtbbFRvjPH8lsiPhahQHlHB87PY2YHH6XlCc/bgHV51/tyGOb/uE+in+D\nFNQZFhr1lpuJ367VabgvDvwdO3cEjLu3JFq3L6h7NmbNyv5EDaGZeWJLRQKBgQCt\n2lJ5bhm1mYKHjztWGIF9nPcXCHRnS1z+Q+aJOBtCGrOUKPkeQhPEoPlij88FKFBM\nM8CS/OhbXqwXbViiWaABHJOsj4Iv6fhyrrNbI6JaJDrj1zYYlhAkT6ZnFYVRvWck\nNIEr3ZKyo36OWfxBsz61XM9GKpC2mJxEy9DKooVsVQKBgQCo4bblma6ybSSNAFYk\ntjizUFzlvkcUNEpGElT/RU6zAVV4NPU/o7RoPBqoPFfW796Zo7a3UgbKEHWi7JAq\n4Wlqu8v0R/P3dFQyxDjROm0lGrhHKPawncSt5Q1VaWnk7Q1s6bm7g7XfS33/LRHp\nsYk9SGaATjkomlX9c3Q7YUGTMw==\n-----END PRIVATE KEY-----\n",
+  "client_email": "mago-gbq@citric-campaign-274511.iam.gserviceaccount.com",
+  "client_id": "110300274337024964802",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/mago-gbq%40citric-campaign-274511.iam.gserviceaccount.com"
+}

@@ -1,0 +1,5 @@
+pandas
+datetime
+google-api-python-client==1.7.11
+oauth2client
+pandas_gbq
